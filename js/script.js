@@ -17,3 +17,6 @@ $(window).scroll(function(){
 $(window).scroll(function(){
     $(this).scrollTop()>50?$(".navlogo").addClass("scrolled2"):$(".navlogo").removeClass("scrolled2")
 });
+$(window).scroll(function(){
+    $(this).scrollTop()>500?$(".btt").addClass("scrolled3"):$(".btt").removeClass("scrolled3")
+});

@@ -203,3 +203,24 @@ footer{
     text-align: center;
     letter-spacing: 0.1em;
 }
+.btt{
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background: var(--bs-nav);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.btt.scrolled3{
+    display: block;
+    transition: 800ms linear;
+}
+.btt a, .btt a:active, .btt a:link{
+    color: red;
+}
+.btt:hover{
+    background: rgba(33,37,41,0.7);
+}
