@@ -7,41 +7,10 @@
     <title>Blaža Ing</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <!--<nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading1">First</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scrollspyHeading2">Second</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h4 id="scrollspyHeading1">First heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading2">Second heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading3">Third heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading4">Fourth heading</h4>
-        <p>...</p>
-        <h4 id="scrollspyHeading5">Fifth heading</h4>
-        <p>...</p>
-      </div>-->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark navtrans">
             <div class="container">
@@ -69,13 +38,11 @@
         </nav>
         <div class="container header">
             <div class="row">
-                <div class="col-md-6 head-wrap">
-                    <div class="">
-                        <h1 class="head">BLAŽA ING</h1>
-                        <h2 class="head2">Uslužna obrada na CNC i univerzalnim mašinama za obradu metala</h2>
-                    </div>
+                <div class="col-md-6 head-wrap" data-aos="fade-right">
+                    <h1 class="head">BLAŽA ING</h1>
+                    <h2 class="head2">Uslužna obrada na CNC i univerzalnim mašinama za obradu metala</h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <div class="logo-wrap">
                         <img src="img/blaziclogo.png" class="head-logo" alt="Blaza Logo">
                     </div> 
@@ -95,7 +62,7 @@
         <div class="container">
             <h2>Usluge</h2>
             <hr class="divider">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-md-4">
                     <div class="card">
                         <img src="img/usluge1.webp" class="card-img-top" alt="Struganje">
@@ -142,7 +109,7 @@
         </div>
     </section>
 
-    <section id="brojac">
+    <section id="brojac" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -165,9 +132,9 @@
         <div class="container">
             <h2>Kontakt</h2>
             <hr class="divider">
-            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Save%20Male%C5%A1eva%2046,%20Ka%C4%87+(Bla%C5%BEa%20Ing)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Save%20Male%C5%A1eva%2046,%20Ka%C4%87+(Bla%C5%BEa%20Ing)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" data-aos="fade-up"></iframe>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right">
                     <h4>Kontaktirajte nas</h4>
                     <form>
                         <div class="mb-3">
@@ -184,7 +151,7 @@
                         </div>
                     </form>   
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <h4>Kontakt</h4>
                     <ul>
                         <li><i class="fas fa-user-tie famag"></i>Miroslav Velicki</li>
@@ -204,7 +171,12 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/numscroller-1.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
