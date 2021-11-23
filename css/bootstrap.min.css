@@ -364,7 +364,7 @@ fieldset {
     min-width: 0;
     padding: 0;
     margin: 0;
-    border: 0;
+    border:0;
 }
 legend {
     float: left;
@@ -4262,7 +4262,6 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
 }
 .card > hr {
@@ -4289,7 +4288,7 @@ fieldset:disabled .btn {
 }
 .card-body {
     flex: 1 1 auto;
-    padding: 1rem 1rem;
+    padding: 2rem 3.5rem;
 }
 .card-title {
     margin-bottom: 0.5rem;

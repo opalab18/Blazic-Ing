@@ -2,10 +2,18 @@
     --bs-nav:rgb(33, 37, 41);
 }
 body{
+    background: url(../img/uslugeback.jpg) fixed;
+    background-size: cover;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
     font-family: Arial,Helvetica,sans-serif;
+}
+.db{
+    display: block;
+}
+.nomag{
+    margin: 0;
 }
 .navtrans{
     background: rgba(33,37,41,0.7);
@@ -96,19 +104,85 @@ header{
 section{
     padding: 50px 0;
 }
-#onama{
+#onama, #usluge, #kontakt{
     text-align: center;
 }
-#onama h2{
+#onama{
+    background: white;
+}
+#onama h2, #usluge h2, #kontakt h2{
     font-size: 38px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+#onama h2, #kontakt h2{
+    text-shadow: 1px 1px 3px #000000;
+    color: var(--bs-nav);
 }
 .divider{
     size: 5px;
     background-color: red;
     width: 25%;
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 40px auto;
+}
+#usluge h2{
+    color: white;
+    text-shadow: 3px 3px 6px #000000;
+}
+#usluge h4, #kontakt h4{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.card-body{
+    text-align: left;
+}
+.card-body li{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.famag{
+    margin-right: 10px;
+}
+#brojac{
+    background: red;
+    text-align: center;
+    color: white;
+}
+#brojac p{
+    font-weight: bold;
+    letter-spacing: .2em;
+}
+.brojevi{
+    font-size: 40px;
+}
+iframe{
+    margin-bottom: 50px;
+}
+form{
+    text-align: left;
+}
+.textarea{
+    width: 100%;
+    height: auto;
+}
+#kontakt{
+    background: white;
+}
+#kontakt li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#kontakt h4{
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px #000000;
+}
+footer{
+    background:var(--bs-nav);
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.1em;
 }
