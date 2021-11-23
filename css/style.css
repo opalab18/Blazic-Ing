@@ -8,6 +8,7 @@ body{
     margin: 0;
     scroll-behavior: smooth;
     font-family: Arial,Helvetica,sans-serif;
+    overflow-x: hidden;
 }
 .db{
     display: block;
@@ -15,12 +16,39 @@ body{
 .nomag{
     margin: 0;
 }
+.justify{
+    text-align: justify;
+}
+.nav-item a {
+    position: relative;
+}
+.nav-item a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid red;
+    transition: 0.4s;
+}
+.nav-item a:hover:after {
+    width: 100%;
+}
+.fixed-top.scrolled1 {
+    background: rgb(33,37,41) !important;
+    transition: 800ms linear;
+}
 .navtrans{
     background: rgba(33,37,41,0.7);
 }
 .navlogo{
     width: 152px;
     height: 121px;
+}
+.navlogo.scrolled2{
+    width: 108px;
+    height: 86px;
+    transition: 800ms linear;
 }
 .navmag{
     margin: 0 30px;
@@ -38,7 +66,7 @@ header{
 .header{
     width: 70%;
     color: white;
-    margin-top: 8%;
+    padding-top: 15%;
 }
 .head-wrap{
     display:flex;
@@ -104,6 +132,10 @@ section{
 #onama h2, #kontakt h2{
     text-shadow: 1px 1px 3px #000000;
     color: var(--bs-nav);
+}
+#onama img{
+    width: 100%;
+    height: auto;
 }
 .divider{
     size: 5px;
