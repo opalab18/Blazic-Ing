@@ -3829,6 +3829,7 @@ fieldset:disabled .btn {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
+    justify-content: center;
 }
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
