@@ -11,9 +11,9 @@ $(function () {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });*/
-$(window).scroll(function(){
+/*$(window).scroll(function(){
     $(this).scrollTop()>50?$(".fixed-top").addClass("scrolled1"):$(".fixed-top").removeClass("scrolled1")
-});
+});*/
 $(window).scroll(function(){
     $(this).scrollTop()>50?$(".navlogo").addClass("scrolled2"):$(".navlogo").removeClass("scrolled2")
 });
